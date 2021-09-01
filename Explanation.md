@@ -27,6 +27,7 @@ Shortest-Seek-Time-First Scheduling (SSTF)
 LOOK Scheduling (LOOK)
 
 In order to implement the above policies, we need to develop methods that handle the arrival of IO requests and the completion of IO requests. That is, when a new IO request arrives, we need to figure out whether to service it immediately or to store it in the IO Request Queue. Whenever an IO request is completed, we need to figure out the next request from the IO Request Queue that needs to be serviced.
+
 ----
 
 # CPU Scheduling
@@ -60,6 +61,7 @@ Round-Robin Scheduling (RR)
 
 
 In order to implement the above policies, we need to develop methods that handle arrival of processes for execution and the completion of process execution. Whenever a process arrives for execution, it can either join the ready queue and wait for its chance to execute or execute immediately (if there is no other process currently executing or if the currently-running process can be preempted). Whenever a process completes execution, another process from the ready queue is chosen to execute next, based on the scheduling policy.
+
 ----
 
 # Memory Allocation
@@ -82,6 +84,7 @@ In this lab project, we address the various ways in which memory can be allocate
 
 
 For the purposes of these labs we define the NULLBLOCK as [start_address: 0, end_address: 0, segment_size: 0, process_id: 0]
+
 ----
 
 # Virtual Memory Allocation
